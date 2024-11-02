@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://babyvqda0fqfv"]
+
+[ext_resource type="Texture2D" uid="uid://ys0w5fbjfhyu" path="res://assets/hedgehog_still.png" id="1_1aoee"]
+[ext_resource type="Script" path="res://scene/Player.cs" id="1_knhbf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1eq48"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1aoee")
+}],
+"loop": true,
+"name": &"temp",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6na33"]
+radius = 111.759
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(148, 150)
+script = ExtResource("1_knhbf")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.433, 0.4)
+sprite_frames = SubResource("SpriteFrames_1eq48")
+animation = &"temp"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6na33")

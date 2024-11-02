@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgw6fb10wayi0"]
+
+[ext_resource type="PackedScene" uid="uid://babyvqda0fqfv" path="res://scene/player.tscn" id="1_lwpag"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_eq0nn"]
+a = Vector2(2, 26)
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_lwpag")]
+position = Vector2(171, 158)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(600, 399)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(171, 158)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("SegmentShape2D_eq0nn")
+disabled = true
