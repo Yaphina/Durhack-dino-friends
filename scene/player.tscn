@@ -1,21 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://babyvqda0fqfv"]
+[gd_scene load_steps=6 format=3 uid="uid://babyvqda0fqfv"]
 
-[ext_resource type="Texture2D" uid="uid://ys0w5fbjfhyu" path="res://assets/hedgehog_still.png" id="1_1aoee"]
 [ext_resource type="Script" path="res://scripts/Player.cs" id="1_knhbf"]
+[ext_resource type="Texture2D" uid="uid://brerhym4iqkst" path="res://assets/DinoFrame1.png" id="2_nnr35"]
+[ext_resource type="Texture2D" uid="uid://uote4wfn166y" path="res://assets/DinoFrame2.png" id="3_ohjgm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1eq48"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_1aoee")
+"texture": ExtResource("2_nnr35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ohjgm")
 }],
 "loop": true,
-"name": &"temp",
+"name": &"idle",
 "speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6na33"]
-radius = 111.759
+radius = 19.2354
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(148, 150)
@@ -23,9 +27,10 @@ script = ExtResource("1_knhbf")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.433, 0.4)
+scale = Vector2(4.325, 4.325)
 sprite_frames = SubResource("SpriteFrames_1eq48")
-animation = &"temp"
+animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3.16, 3.16)
 shape = SubResource("CircleShape2D_6na33")

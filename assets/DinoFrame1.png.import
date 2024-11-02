@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ys0w5fbjfhyu"
-path="res://.godot/imported/hedgehog_still.png-3b55d94b3be99cf68323c70da82f6191.ctex"
+uid="uid://brerhym4iqkst"
+path="res://.godot/imported/DinoFrame1.png-db9927a730ae595f1e496d94469441c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/hedgehog_still.png"
-dest_files=["res://.godot/imported/hedgehog_still.png-3b55d94b3be99cf68323c70da82f6191.ctex"]
+source_file="res://assets/DinoFrame1.png"
+dest_files=["res://.godot/imported/DinoFrame1.png-db9927a730ae595f1e496d94469441c8.ctex"]
 
 [params]
 
