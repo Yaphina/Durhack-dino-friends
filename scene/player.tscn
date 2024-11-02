@@ -34,5 +34,6 @@ frame = 1
 frame_progress = 0.59298
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 scale = Vector2(3.16, 3.16)
 shape = SubResource("CircleShape2D_6na33")
