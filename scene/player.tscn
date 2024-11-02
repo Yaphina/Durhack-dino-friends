@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://babyvqda0fqfv"]
 
 [ext_resource type="Texture2D" uid="uid://ys0w5fbjfhyu" path="res://assets/hedgehog_still.png" id="1_1aoee"]
-[ext_resource type="Script" path="res://scene/Player.cs" id="1_knhbf"]
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_knhbf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1eq48"]
 animations = [{
