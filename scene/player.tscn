@@ -19,7 +19,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6na33"]
-radius = 8.86641
+radius = 7.27848
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(132, 128)
@@ -34,6 +34,6 @@ frame = 1
 frame_progress = 0.59298
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+position = Vector2(5, 5)
 scale = Vector2(3.16, 3.16)
 shape = SubResource("CircleShape2D_6na33")

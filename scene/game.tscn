@@ -73,6 +73,7 @@ sources/1 = SubResource("TileSetAtlasSource_j0lwr")
 a = Vector2(2, 26)
 
 [node name="Game" type="Node2D"]
+position = Vector2(660, -51)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(0, -1)

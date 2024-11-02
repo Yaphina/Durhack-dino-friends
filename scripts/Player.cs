@@ -10,6 +10,7 @@ public partial class Player : CharacterBody2D
 		Vector2 velocity = Velocity;
 
 		var animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+		// if have multiple characters = may need to change name
 		animatedSprite2D.Play();
 
 		// Get the input direction and handle the movement/deceleration.
