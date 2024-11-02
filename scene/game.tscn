@@ -1,7 +1,34 @@
-[gd_scene load_steps=6 format=4 uid="uid://cgw6fb10wayi0"]
+[gd_scene load_steps=10 format=4 uid="uid://cgw6fb10wayi0"]
 
 [ext_resource type="PackedScene" uid="uid://babyvqda0fqfv" path="res://scene/player.tscn" id="1_lwpag"]
+[ext_resource type="Texture2D" uid="uid://dislgqyvcxrkd" path="res://assets/Rock.png" id="1_xve51"]
+[ext_resource type="Texture2D" uid="uid://bgynkr421royt" path="res://assets/tileset2.png" id="2_bobul"]
 [ext_resource type="Texture2D" uid="uid://dbruxuj120cka" path="res://assets/tileset.png" id="2_k637n"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_64kmb"]
+texture = ExtResource("1_xve51")
+texture_region_size = Vector2i(32, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j0lwr"]
+texture = ExtResource("2_bobul")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m0vb6"]
 texture = ExtResource("2_k637n")
@@ -39,6 +66,8 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_4c4tv"]
 tile_size = Vector2i(32, 32)
 sources/4 = SubResource("TileSetAtlasSource_m0vb6")
+sources/0 = SubResource("TileSetAtlasSource_64kmb")
+sources/1 = SubResource("TileSetAtlasSource_j0lwr")
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_eq0nn"]
 a = Vector2(2, 26)
