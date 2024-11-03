@@ -1,8 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://babyvqda0fqfv"]
+[gd_scene load_steps=13 format=3 uid="uid://babyvqda0fqfv"]
 
 [ext_resource type="Script" path="res://scripts/Player.cs" id="1_knhbf"]
 [ext_resource type="Texture2D" uid="uid://brerhym4iqkst" path="res://assets/DinoFrame1.png" id="2_nnr35"]
 [ext_resource type="Texture2D" uid="uid://uote4wfn166y" path="res://assets/DinoFrame2.png" id="3_ohjgm"]
+[ext_resource type="Texture2D" uid="uid://bag7mu2jdoxq7" path="res://assets/idle2.png" id="4_3o1l7"]
+[ext_resource type="Texture2D" uid="uid://cqocy1n6ahg6b" path="res://assets/DinoFrameWalkLeft1.png" id="4_l44dh"]
+[ext_resource type="Texture2D" uid="uid://1i4olor0syyt" path="res://assets/DinoFrameWalkLeft2.png" id="5_eyw5o"]
+[ext_resource type="Texture2D" uid="uid://6mtw32m8j2ty" path="res://assets/behind.png" id="5_q8qp2"]
+[ext_resource type="Texture2D" uid="uid://bgkddno0yey10" path="res://assets/behind2.png" id="6_v87ky"]
+[ext_resource type="Texture2D" uid="uid://cdttdk500hu2i" path="res://assets/DinoFrameWalk1.png" id="6_woonk"]
+[ext_resource type="Texture2D" uid="uid://ce45581kxu2b" path="res://assets/DinoFrameWalk2.png" id="7_3npe6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1eq48"]
 animations = [{
@@ -15,6 +22,55 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3o1l7")
+}],
+"loop": true,
+"name": &"idle2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_q8qp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v87ky")
+}],
+"loop": true,
+"name": &"running_away",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l44dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eyw5o")
+}],
+"loop": true,
+"name": &"running_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_woonk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3npe6")
+}],
+"loop": true,
+"name": &"running_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_3o1l7")
+}],
+"loop": true,
+"name": &"running_towards",
 "speed": 5.0
 }]
 
@@ -29,9 +85,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.16, 2.16)
 sprite_frames = SubResource("SpriteFrames_1eq48")
-animation = &"idle"
-frame = 1
-frame_progress = 0.59298
+animation = &"running_away"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5, 5)
