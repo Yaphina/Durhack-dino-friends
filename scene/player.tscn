@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://babyvqda0fqfv"]
+[gd_scene load_steps=15 format=3 uid="uid://babyvqda0fqfv"]
 
 [ext_resource type="Script" path="res://scripts/Player.cs" id="1_knhbf"]
 [ext_resource type="Texture2D" uid="uid://brerhym4iqkst" path="res://assets/DinoFrame1.png" id="2_nnr35"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://bgkddno0yey10" path="res://assets/behind2.png" id="6_v87ky"]
 [ext_resource type="Texture2D" uid="uid://cdttdk500hu2i" path="res://assets/DinoFrameWalk1.png" id="6_woonk"]
 [ext_resource type="Texture2D" uid="uid://ce45581kxu2b" path="res://assets/DinoFrameWalk2.png" id="7_3npe6"]
+[ext_resource type="Texture2D" uid="uid://cq0b7i7vqjlm5" path="res://assets/toward1.png" id="11_pp606"]
+[ext_resource type="Texture2D" uid="uid://c5428uro31xo8" path="res://assets/toward2.png" id="12_tl5i1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1eq48"]
 animations = [{
@@ -67,7 +69,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_3o1l7")
+"texture": ExtResource("11_pp606")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_tl5i1")
 }],
 "loop": true,
 "name": &"running_towards",
@@ -75,19 +80,19 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6na33"]
-radius = 7.27848
+radius = 6.02098
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(132, 128)
+position = Vector2(146, 133)
 script = ExtResource("1_knhbf")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.16, 2.16)
 sprite_frames = SubResource("SpriteFrames_1eq48")
-animation = &"running_away"
+animation = &"running_towards"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 5)
+position = Vector2(-2, 5)
 scale = Vector2(3.16, 3.16)
 shape = SubResource("CircleShape2D_6na33")

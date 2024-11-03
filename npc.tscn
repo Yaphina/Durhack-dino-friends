@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bkmvrbpdyo2st"]
+[gd_scene load_steps=7 format=3 uid="uid://bps2u8nxp3uox"]
 
 [ext_resource type="Texture2D" uid="uid://cxj8gl0wyow5u" path="res://assets/ScratchcatFrame1.png" id="1_61emi"]
 [ext_resource type="Script" path="res://npc.gd" id="1_yib8t"]
