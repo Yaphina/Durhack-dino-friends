@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://mg7sc0vwbxm6"]
+
+[ext_resource type="Texture2D" uid="uid://b6wh5iigorus4" path="res://assets/Untitled_Artwork.png" id="1_qvas0"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+offset_right = 6.0
+offset_bottom = 6.0
+texture = ExtResource("1_qvas0")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+metadata/_edit_use_anchors_ = true
