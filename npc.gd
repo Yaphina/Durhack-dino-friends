@@ -33,7 +33,7 @@ func _process(delta):
 		if dir.y == -1:
 			$AnimatedSprite2D.play("walk_n")
 		if dir.y == 1:
-			$AnimatedSprite2D.play("walk_s")
+			$AnimatedSprite2D.play("walk_s")*/
 	
 	if is_roaming:
 		match current_state:

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://d20ab1ej24p1d"]
+
+[ext_resource type="Script" path="res://scripts/GemPickup.cs" id="1_m7484"]
+[ext_resource type="Texture2D" uid="uid://ce3ne2k4eseqk" path="res://assets/gem.png" id="1_ny0c6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3a6qu"]
+
+[node name="gemPickup" type="Area2D"]
+script = ExtResource("1_m7484")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ny0c6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_3a6qu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
