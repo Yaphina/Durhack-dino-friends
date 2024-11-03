@@ -33,7 +33,7 @@ public partial class Player : CharacterBody2D
 			animatedSprite2D.Play("idle");
 		}
 	}
-
+	
 	public override void _PhysicsProcess(double delta)
 	{
 		GetInput();
