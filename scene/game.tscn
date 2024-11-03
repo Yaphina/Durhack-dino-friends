@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=4 uid="uid://cgw6fb10wayi0"]
+[gd_scene load_steps=11 format=4 uid="uid://cgw6fb10wayi0"]
 
 [ext_resource type="PackedScene" uid="uid://babyvqda0fqfv" path="res://scene/player.tscn" id="1_lwpag"]
 [ext_resource type="Texture2D" uid="uid://dislgqyvcxrkd" path="res://assets/Rock.png" id="1_xve51"]
 [ext_resource type="Texture2D" uid="uid://bgynkr421royt" path="res://assets/tileset2.png" id="2_bobul"]
 [ext_resource type="Texture2D" uid="uid://dbruxuj120cka" path="res://assets/tileset.png" id="2_k637n"]
+[ext_resource type="PackedScene" uid="uid://bkmvrbpdyo2st" path="res://npc.tscn" id="5_15uqx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_64kmb"]
 texture = ExtResource("1_xve51")
@@ -93,3 +94,6 @@ metadata/_edit_group_ = true
 position = Vector2(-1, 0)
 shape = SubResource("SegmentShape2D_eq0nn")
 disabled = true
+
+[node name="npc" parent="." instance=ExtResource("5_15uqx")]
+position = Vector2(-56, 34)
